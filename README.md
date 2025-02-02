@@ -1,1 +1,18 @@
 # AI-for-Science-and-Engineering
+
+This repository contains several projects that explore how neural networks can be applied to solve complex problems in the sciences and engineering. These projects were part of the course **AI in the Sciences and Engineering** at **ETH Zurich**, where I worked with **Neural Differential Equations, Neural Operators, and Physics-Informed Neural Networks (PINNs)** to tackle challenges in scientific modeling and simulation.  
+
+The code in this repository is **not meant to be plug-and-play** but rather serves as a showcase of programming I have done in this domain. Each project is organized in its own folder, containing a **task description, a report detailing the implementation and findings, and the corresponding code**. Some projects require additional datasets or dependencies that are not provided here, as the main goal is to highlight the methods and approaches used rather than offer a fully self-contained software package.  
+
+### **Neural Differential Equations**  
+This project focuses on using deep learning for solving differential equations and discovering governing equations from data. One task involved training a neural network controller to balance an **inverted pendulum** by learning a forcing function that stabilizes the system. Another task applied **PDE-FIND**, a regression-based method, to automatically identify the underlying partial differential equation of an unknown system. The results demonstrate how **neural networks can be integrated with differential equation solvers to learn control strategies**, as well as how **data-driven approaches can extract physical laws from observed behavior**.  
+
+### **Neural Operators for Scientific Modeling**  
+Neural operators offer a way to learn function-to-function mappings, making them well-suited for problems where we need to generalize across different input conditions. In this project, I applied **Fourier Neural Operators (FNOs)** to predict the thermal evolution of a heat storage system used in solar power plants. Additionally, I implemented **Spherical Fourier Neural Operators (SFNOs)** to model geophysical fluid flows, specifically the **Shallow Water Equations**, which describe atmospheric and oceanic dynamics. The experiments compared SFNOs to standard FNOs, highlighting the advantages of incorporating **spherical harmonics for improved generalization and efficiency in global-scale simulations**.  
+
+### **Thermal Storage Design with PINNs**  
+This project explores **Physics-Informed Neural Networks (PINNs)** for solving and inferring solutions to **thermal energy transport PDEs** in a solar power plant storage system. PINNs were first used to **solve forward PDE problems**, predicting temperature evolution based on physical constraints. The second part of the project tackled an **inverse problem**, where the goal was to infer unknown thermal properties from observed fluid temperature data. In addition, an applied regression task explored the use of deep learning for **predicting California housing prices**, highlighting how data preprocessing and feature engineering play a crucial role in real-world machine learning applications.  
+
+These projects demonstrate how **deep learning methods can be combined with physics-based modeling** to solve scientific problems. Whether through **neural controllers for dynamical systems, data-driven discovery of governing equations, or physics-informed models for engineering applications**, the work in this repository provides insights into the potential and limitations of neural networks in these domains.  
+
+If you're interested in a specific implementation or would like to discuss any of the projects, feel free to reach out!
